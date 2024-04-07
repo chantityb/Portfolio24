@@ -1,0 +1,16 @@
+.aboutme-container {
+    gap: var(--gap);
+    padding: var(--page-padding);
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    margin-top: 85px;
+}
+
+.aboutme-container img {
+    max-width: 50%;
+    max-height: 300px;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 2px 2px 2px 1px rgba(0,0,0,0.2);
+}

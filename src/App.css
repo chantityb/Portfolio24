@@ -1,0 +1,121 @@
+body {
+    place-items: flex-start !important;
+    display: flex;
+    max-width: 1260px;
+    overflow-x: hidden; 
+}
+
+#root {
+  flex-grow: 1;
+}
+
+.app {
+  width: 100%;
+  max-width: 1325px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+*,
+*::after,
+*::before {
+  /* removes extra size when adding "padding" */
+  box-sizing: border-box;
+}
+
+
+:root {
+  --page-padding: 1.2rem 10rem;
+  --gap: 1rem;
+  --padding: 1.2rem;
+  --border-radius: 5px;
+
+  
+  /* COLORS */
+  --light-shades: #FEFDFD;
+  --main-brand: #E4198C;
+  --dark-accent: #1D191C;
+  --dark-shade: #332f32;
+  --blue-accent: #0060FD;  
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.btn {
+  padding: 0.45rem 1.2rem;
+  cursor: pointer;
+  background-color: var(--dark-shades);
+  border-radius: var(--border-radius);
+  color: var(--main-brand);
+  border: none;
+  transition: all 0.2s ease-in-out;
+  width: fit-content;
+}
+
+.align-right {
+  margin-left: auto;
+}
+
+.btn:hover {
+  background-color: var(--main-brand);
+  color: var(--light-shades);
+}
+
+.background-animation {
+  background: linear-gradient(
+    -45deg,
+    var(--light-shades),
+    var(--dark-shades),
+    var(--dark-accent)
+  );
+  background-size: 400% 400%;
+  animation: gradient 4s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --page-padding: 1rem 2rem;
+    }
+    
+    .navbar-container {
+        flex-direction: column;
+        gap: var(--gap);
+    }
+
+    .navbar-links-container {
+      flex-direction: column;
+    }
+
+    .aboutme-container {
+    flex-direction: column;
+  }
+
+  .contact-container {
+    flex-direction: column;
+  }
+}
+
+
+
