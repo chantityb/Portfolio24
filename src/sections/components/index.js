@@ -1,5 +1,5 @@
-import AnimatedBg from './AnimatedBg/AnimatedBackground';
-import Typewritter from "./Typewritter/Typewritter";
-import Modal from "./Modal/Modal";
+import AnimatedBackground from './AnimatedBackground/AnimatedBackground';
+import Typewriter from './Typewriter/Typewriter';
+import Modal from './Modal/Modal';
 
-export { AnimatedBg, Typewritter, Modal };
+export { AnimatedBackground, Typewriter, Modal };

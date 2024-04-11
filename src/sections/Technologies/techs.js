@@ -1,8 +1,8 @@
-import js from "./svg/js.svg?react";
-import React from "./svg/react.svg?react";
-import sql from "./svg/sql.svg?react";
-import html from "./svg/html.svg?react";
-import git from "./svg/git.svg?react";
+import js from "./svg/js.svg";
+import React from "./svg/react.svg";
+import sql from "./svg/sql.svg";
+import html from "./svg/html.svg";
+import git from "./svg/git.svg";
 
 
 export const techs = [

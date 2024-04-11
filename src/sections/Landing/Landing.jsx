@@ -1,29 +1,29 @@
 import './Landing.css';
-import AnimatedBackground from '../components/AnimatedBg/AnimatedBackground';
-// import { Typewritter } from '../components/Typewritter/Typewritter';
+import AnimatedBackground from '../components/AnimatedBackground/AnimatedBackground';
+import Typewriter from '../components/Typewriter/Typewriter';
+//import { Typewriter, AnimatedBackground } from '../components/index';
 
-
-let msgArray = [
-  " ",
-  "Creative",
-  "Versatile",
-  "a Front-end developer",
-  "Back-end developer",
-  "Full stack developer",
-  "Or!",
-  '"a coder"',
-  " ",
-];
+// let msgArray = [
+//   " ",
+//   "Creative",
+//   "Versatile",
+//   "a Front-end developer",
+//   "Back-end developer",
+//   "Full stack developer",
+//   "Or!",
+//   '"a coder"',
+//   " ",
+// ];
 
 function Landing() {
-  return (  
+  return (
     <AnimatedBackground>
       <div className="landing-type">
         <div>I Am</div>
-        {/* <Typewritter data={msgArray} /> */}
+        <Typewriter />
       </div>
     </AnimatedBackground>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

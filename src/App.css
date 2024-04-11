@@ -1,18 +1,24 @@
 body {
     place-items: flex-start !important;
     display: flex;
-    max-width: 1260px;
+    /* max-width: 1260px; */
     overflow-x: hidden; 
 }
 
 #root {
   flex-grow: 1;
+  max-width: 1536px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* padding-left: 0.5rem;
+  padding-right: 0.5rem; */
 }
 
-.app {
+/* .app {
   width: 100%;
   max-width: 1325px;
-}
+} */
 
 h1,
 h2,
@@ -33,6 +39,7 @@ p {
 
 :root {
   --page-padding: 1.2rem 10rem;
+  /* --page-padding: 1.2rem 6.5rem 1.2rem 10rem; */
   --gap: 1rem;
   --padding: 1.2rem;
   --border-radius: 5px;
@@ -42,7 +49,7 @@ p {
   --light-shades: #FEFDFD;
   --main-brand: #E4198C;
   --dark-accent: #1D191C;
-  --dark-shade: #332f32;
+  --dark-shades: #332f32;
   --blue-accent: #0060FD;  
 }
 
@@ -71,12 +78,8 @@ html {
 }
 
 .background-animation {
-  background: linear-gradient(
-    -45deg,
-    var(--light-shades),
-    var(--dark-shades),
-    var(--dark-accent)
-  );
+  /* background: linear-gradient(-45deg, var(--light-shades), var(--dark-shades), var(--dark-accent)); */
+  background: linear-gradient(-45deg, var(--light-shades), var(--dark-shades), var(--main-brand));
   background-size: 400% 400%;
   animation: gradient 4s ease infinite;
 }
@@ -94,11 +97,86 @@ html {
 }
 
 
+/* 2xl */
+@media (max-width: 1536px) {
+  #root {
+    min-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  #root {
+    min-width: 1024px;
+  }
+
+  .navbar-container {
+    padding: 1.5rem 4rem !important;
+  }
+
+  .navbar-name {
+    font-size: 23px !important;
+  }
+
+  .navbar-links-container {
+    font-size: 16px !important;
+  }
+
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  #root {
+    min-width: 768px;
+  }
+
+  .navbar-container {
+    padding: 1.5rem 3rem !important;
+  }
+
+  .navbar-name {
+    font-size: 22px !important;
+  }
+
+  .navbar-links-container {
+    font-size: 14px !important;
+  }
+
+  .aboutme-container {
+    padding: 0 2.5rem !important;
+    flex-direction: column;
+    margin-top: 5% !important;
+    margin-bottom: 0 !important;
+  }
+
+  .aboutme-content {
+    margin-top: -15px !important;
+  }
+
+  .aboutme-content h1 {
+    font-size: 2.8em !important;
+    text-align: center;
+  }
+
+  .technologies-container h1 {
+    font-size: 2.8em !important;
+  }
+
+  .tech-grid-container {
+    width: 90% !important;
+  }
+
+  .portfolio-container h1 {
+    font-size: 2.8em !important;
+  }
+}
+
 @media screen and (max-width: 768px) {
-    :root {
-        --page-padding: 1rem 2rem;
-    }
-    
+   #root {
+        min-width: 640px;
+      --page-padding: 1rem 2rem;
+   } 
+      
     .navbar-container {
         flex-direction: column;
         gap: var(--gap);
@@ -110,10 +188,51 @@ html {
 
     .aboutme-container {
     flex-direction: column;
+    margin-top: 7% !important;
+  }
+
+  .aboutme-content h1 {
+    text-align: center;
+  }
+
+  .tech-grid-container {
+    width: 65% !important;
   }
 
   .contact-container {
     flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  #root {
+    min-width: 475px;
+  }
+
+  .aboutme-content {
+    margin-left: 10px !important;
+    margin-top: -10px !important;
+  }
+
+  .aboutme-content h1 {
+    text-align: center;
+  }
+
+  .tech-grid-container {
+    width: 60% !important;
+  }
+
+  .contact-container {
+    text-align: center;
+  }
+}
+
+/* xs */
+@media (min-width: 475px) {
+  #root {
+    width: 100%;
   }
 }
 

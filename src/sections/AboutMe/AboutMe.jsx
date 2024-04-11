@@ -6,7 +6,7 @@ function AboutMe() {
   return (
     <div id="about" className="aboutme-container">
           <img src={imgUrl} alt="About Me" />
-          <div>
+          <div className='aboutme-content'>
               <h1>About Me</h1>
               <p>
                 I am a versatile and productive Full Stack Developer with over 7 years of

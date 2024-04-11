@@ -35,28 +35,28 @@ export const projects = [
     image: "https://picsum.photos/500",
     url: "https://picsum.photos/500",
   },
-  {
+ /* {
     title: "Pomodoro clock",
     description: "Pomodoro clock that can be used to track your time.",
     image: "https://picsum.photos/400",
     url: "https://picsum.photos/400",
-  },
-  {
+  }, */
+ /* {
     title: "To-do list",
     description: "To-do list that can be used to track your tasks.",
     image: "https://picsum.photos/450",
     url: "https://picsum.photos/450",
-  },
-  {
+  }, */
+ /* {
     title: "Calendar",
     description: "Calendar that can be used to track your events.",
     image: "https://picsum.photos/680",
     url: "https://picsum.photos/680",
-  },
-  {
+  }, */
+  /*{
     title: "Weather app",
     description: "Weather app that displays the current weather in your city.",
     image: "https://picsum.photos/720",
     url: "https://picsum.photos/720",
-  },
+  }, */
 ]

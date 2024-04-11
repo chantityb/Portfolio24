@@ -13,10 +13,10 @@ function Technologies() {
 
   return (
     <div id="technologies" className="technologies-container">
-      <h1>Some of the technologies I use</h1>
+      <h1>Technologies I Use</h1>
       <div className="tech-grid-container">
         {technologiesList}
-        {technologiesList}
+        {/* {technologiesList} */}
       </div>
       <h3>And more...</h3>
     </div>
