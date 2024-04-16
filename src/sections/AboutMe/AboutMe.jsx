@@ -1,6 +1,7 @@
 import './AboutMe.css';
+import cBLogo from './images/CB-logo.jpg'
 
-let imgUrl = '/src/assets/CB-logo.jpg'
+let imgUrl = cBLogo;
 
 
 function AboutMe() {
