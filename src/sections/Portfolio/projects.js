@@ -1,62 +1,27 @@
 export const projects = [
   {
-    title: "Weather app",
-    description: "Weather app that displays the current weather in your city. Weather app that displays the current weather in your city. Weather app that displays the current weather in your city.",
-    image: "https://picsum.photos/900",
-    url: "https://picsum.photos/900",
+    title: "Tic Tac Toe",
+    description: "The project is an alternative version of the tic tac toe game created using React.js. This app also uses CSS grid layout and JS audio functionality.",
+    image: "/src/assets/tic-tac.png",
+    url: "https://react-tactoe.netlify.app",
   },
   {
-    title: "Calculator",
-    description: "Calculator",
-    image: "https://picsum.photos/950",
-    url: "https://picsum.photos/950",
+    title: "Movie App",
+    description: "This project is a movie app created using React.js that fetches data from the OMDb API with search functionality",
+    image: "/src/assets/movie.png",
+    url: "https://rctjs-movie-app.netlify.app",
   },
   {
-    title: "Facebook clone",
-    description: "Facebook clone that can be used to login and post messages.",
-    image: "https://picsum.photos/920",
-    url: "https://picsum.photos/920",
+    title: "Tour App",
+    description: "This project is a simple landing page for a travel agency using React.js.",
+    image: "/src/assets/backroads.png",
+    url: "https://react-backroads-tour.netlify.app/",
   },
   {
-    title: "Twitter clone",
-    description: "Twitter clone that can be used to login and post messages.",
-    image: "https://picsum.photos/700",
-    url: "https://picsum.photos/700",
+    title: "Pushing Forward",
+    description: "This project was created using WordPress as the CMS and Divi as the theme. The site consists of custom CSS and Vanilla JS throughout ",
+    image: "/src/assets/pf.jpg",
+    url: "https://pushingforwardinc-com.stackstaging.com/",
   },
-  {
-    title: "Instagram clone",
-    description: "Instagram clone that can be used to login and post messages.",
-    image: "https://picsum.photos/600",
-    url: "https://picsum.photos/600",
-  },
-  {
-    title: "Tic-tac-toe",
-    description: "Tic-tac-toe game that can be used to play against a friend.",
-    image: "https://picsum.photos/500",
-    url: "https://picsum.photos/500",
-  },
- /* {
-    title: "Pomodoro clock",
-    description: "Pomodoro clock that can be used to track your time.",
-    image: "https://picsum.photos/400",
-    url: "https://picsum.photos/400",
-  }, */
- /* {
-    title: "To-do list",
-    description: "To-do list that can be used to track your tasks.",
-    image: "https://picsum.photos/450",
-    url: "https://picsum.photos/450",
-  }, */
- /* {
-    title: "Calendar",
-    description: "Calendar that can be used to track your events.",
-    image: "https://picsum.photos/680",
-    url: "https://picsum.photos/680",
-  }, */
-  /*{
-    title: "Weather app",
-    description: "Weather app that displays the current weather in your city.",
-    image: "https://picsum.photos/720",
-    url: "https://picsum.photos/720",
-  }, */
+  
 ]

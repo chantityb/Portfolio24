@@ -3,24 +3,23 @@ import AnimatedBackground from '../components/AnimatedBackground/AnimatedBackgro
 import Typewriter from '../components/Typewriter/Typewriter';
 //import { Typewriter, AnimatedBackground } from '../components/index';
 
-// let msgArray = [
-//   " ",
-//   "Creative",
-//   "Versatile",
-//   "a Front-end developer",
-//   "Back-end developer",
-//   "Full stack developer",
-//   "Or!",
-//   '"a coder"',
-//   " ",
-// ];
+let msgArray = [
+  " ",
+  "Creative",
+  "Versatile",
+  "Curious",
+  // "Passionate",
+  "Always Learning & Growing",
+  "a Full Stack Developer",
+  " ",
+];
 
 function Landing() {
   return (
     <AnimatedBackground>
       <div className="landing-type">
         <div>I Am</div>
-        <Typewriter />
+        <Typewriter data={msgArray} />
       </div>
     </AnimatedBackground>
   );

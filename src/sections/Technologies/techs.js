@@ -10,5 +10,5 @@ export const techs = [
   { name: "React", image: React },
   { name: "SQL", image: sql },
   { name: "HTML", image: html},
-  { name: "Git", image: git}
+  { name: "Git", image: git }
 ]

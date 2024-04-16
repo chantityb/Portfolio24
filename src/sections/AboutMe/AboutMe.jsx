@@ -1,6 +1,7 @@
 import './AboutMe.css';
 
-let imgUrl = 'https://picsum.photos/800'
+let imgUrl = '/src/assets/CB-logo.jpg'
+
 
 function AboutMe() {
   return (
