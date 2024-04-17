@@ -11,3 +11,12 @@
 .contact-name {
   font-family: "Petit Formal Script", cursive;
 }
+
+.anchor-mail a {
+  color: #fff !important;
+  font-weight: 400;
+}
+
+.anchor-mail a:hover {
+  color: #dddcdc !important;
+}

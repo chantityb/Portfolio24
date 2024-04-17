@@ -143,6 +143,10 @@ html {
     margin-bottom: 0 !important;
   }
 
+  .aboutme-container img {
+    max-height: 290px !important;
+  }
+
   .aboutme-content {
     margin-top: -15px !important;
   }
@@ -167,8 +171,8 @@ html {
 
 @media screen and (max-width: 768px) {
    #root {
-        min-width: 640px;
       --page-padding: 1rem 2rem;
+      min-width: 640px;
    } 
       
     .navbar-container {
@@ -185,12 +189,16 @@ html {
     margin-top: 7% !important;
   }
 
+  .aboutme-container img {
+    max-height: 280px !important;
+  }
+
   .aboutme-content h1 {
     text-align: center;
   }
 
-  .tech-grid-container {
-    width: 65% !important;
+  .technologies-container h1 {
+      margin-right: 3%;
   }
 
   .contact-container {
@@ -202,20 +210,29 @@ html {
 /* sm */
 @media (max-width: 640px) {
   #root {
-    min-width: 475px;
+    min-width: 513px;
+  }
+
+  .aboutme-container img {
+    margin-right: 15px;
   }
 
   .aboutme-content {
-    margin-left: 10px !important;
     margin-top: -10px !important;
   }
 
   .aboutme-content h1 {
     text-align: center;
+    margin-right: 11px;
   }
 
   .tech-grid-container {
     width: 60% !important;
+    margin-right: 11px;
+  }
+
+  .portfolio-container {
+    margin-right: 20px;
   }
 
   .contact-container {
@@ -223,12 +240,129 @@ html {
   }
 }
 
-/* xs */
-@media (min-width: 320px) {
+@media (max-width: 513px) {
   #root {
-    width: 100%;
+     min-width: 475px;
+  }
+
+  .technologies-container {
+    text-align: center;
   }
 }
+
+/* xs */
+@media (max-width: 475px) {
+  #root {
+    min-width: 460px;
+  }
+
+  .aboutme-container {
+    margin-left: 10px;
+  }
+
+  .aboutme-content h1 {
+    font-size: 2.5em !important;
+    margin-right: 8px;
+  }
+
+  .technologies-container h1 {
+    text-align: center;
+    margin-left: 5px;    
+    font-size: 2.5em !important;
+  }
+
+  .tech-grid-container {
+    width: 40% !important;
+    margin-right: 32.5%;
+  }
+
+  .portfolio-container h1 {
+    font-size: 2.5em !important;
+  }
+}
+
+@media (max-width: 460px) {
+    #root {
+    min-width: 425px;
+  }
+  
+  .aboutme-container img {
+    max-width: 65%;
+  }
+
+  .portfolio-container p {
+    text-align: center;
+  }
+
+  .portfolio-grid {
+    margin-left: 9%;
+  }
+  
+  .contact-container {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 425px) {
+  .aboutme-content h1 {
+    margin-right: 25px;
+    font-size: 2.3em !important;
+  }
+  
+  .technologies-container h1 {
+    font-size: 2.3em !important;
+  }
+  
+  .tech-grid-container {
+    width: 90% !important;
+    margin-right: 0;
+  }
+
+  .portfolio-container h1 {
+    font-size: 2.3em !important;
+  }
+}
+
+@media (max-width: 400px) {
+  #root {
+    min-width: 376px;
+  }
+  
+  .tech-grid-container {
+    width: 51% !important;
+    margin-left: -36%;  
+  }
+
+  .portfolio-grid {
+    margin-left: 10%;
+  }
+
+}
+
+@media (max-width: 375px) {
+    .navbar-container {
+  padding: 1.5rem 1.8rem !important;
+  }
+
+  .technologies-container h1 {
+    margin-left: -5px;
+  }
+
+  .tech-grid-container {
+    margin-left: -44%;
+  }
+
+  .portfolio-grid {
+    margin-left: 7.5%;
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar-container {
+  padding: 1.5rem 1.5rem !important;
+  }
+}
+
 
 
 

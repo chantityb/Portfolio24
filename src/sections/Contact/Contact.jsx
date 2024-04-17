@@ -6,7 +6,7 @@ function Contact() {
       <p className="contact-name">Chantity Buraimoh</p>
       <p>Louisville, KY</p>
       {/* <p>+1 (502) 715-5938</p> */}
-      <p>chantityb@email.com</p>
+      <p className="anchor-mail"><a href='mailto:chantityb@gmail.com'>chantityb@gmail.com</a></p>
     </div>
   )
 }
