@@ -200,7 +200,7 @@ html {
   }
 
   .technologies-container h1 {
-      margin-right: 3%;
+      margin-right: 0;
   }
 
   .contact-container {
@@ -212,11 +212,11 @@ html {
 /* sm */
 @media (max-width: 640px) {
   #root {
-    min-width: 513px;
+    min-width: 500px;
   }
 
   .aboutme-container img {
-    margin-right: 15px;
+    max-width: 250px !important;
   }
 
   .aboutme-content {
@@ -225,16 +225,20 @@ html {
 
   .aboutme-content h1 {
     text-align: center;
-    margin-right: 11px;
+    margin-right: 0;
+  }
+
+  .aboutme-content p {
+    margin-right: 0;
   }
 
   .tech-grid-container {
     width: 60% !important;
-    margin-right: 11px;
+    margin-right: 2px;
   }
 
   .portfolio-container {
-    margin-right: 20px;
+    margin-right: 0;
   }
 
   .contact-container {
@@ -242,13 +246,30 @@ html {
   }
 }
 
-@media (max-width: 513px) {
+@media (max-width: 500px) {
   #root {
      min-width: 475px;
   }
 
-  .technologies-container {
-    text-align: center;
+  .aboutme-container img {
+    max-width: 230px !important;
+  }
+
+  .technologies-container h1 {
+    font-size: 2.5em !important;
+  }
+
+  .tech-grid-container {
+    margin-right: 0;
+    width: 70% !important;
+  }
+  
+  /* .portfolio-container {
+    margin-left: 5px;
+  } */
+
+  .portfolio-grid {
+    margin-top: 15px;
   }
 }
 
@@ -258,24 +279,24 @@ html {
     min-width: 460px;
   }
 
-  .aboutme-container {
-    margin-left: 10px;
+  .aboutme-container img {
+    margin-right: 0;
+    max-width: 220px !important;
+
   }
 
   .aboutme-content h1 {
     font-size: 2.5em !important;
-    margin-right: 8px;
   }
 
   .technologies-container h1 {
     text-align: center;
-    margin-left: 5px;    
     font-size: 2.5em !important;
   }
 
   .tech-grid-container {
-    width: 40% !important;
-    margin-right: 32.5%;
+    width: 75% !important;
+    margin-right: -5px;
   }
 
   .portfolio-container h1 {
@@ -289,15 +310,16 @@ html {
   }
   
   .aboutme-container img {
-    max-width: 65%;
+    max-width: 55% !important;
+  }
+
+  .tech-grid-container {
+    width: 77% !important;
+    margin-right: 0;
   }
 
   .portfolio-container p {
     text-align: center;
-  }
-
-  .portfolio-grid {
-    margin-left: 9%;
   }
   
   .contact-container {
@@ -307,7 +329,6 @@ html {
 
 @media (max-width: 425px) {
   .aboutme-content h1 {
-    margin-right: 25px;
     font-size: 2.3em !important;
   }
   
@@ -317,7 +338,7 @@ html {
   
   .tech-grid-container {
     width: 90% !important;
-    margin-right: 0;
+    margin-right: -2px;
   }
 
   .portfolio-container h1 {
@@ -327,41 +348,66 @@ html {
 
 @media (max-width: 400px) {
   #root {
-    min-width: 376px;
+    min-width: 375px;
   }
-  
-  .tech-grid-container {
-    width: 51% !important;
-    margin-left: -36%;  
+
+  .aboutme-container img {
+    max-width: 55% !important;
   }
 
   .portfolio-grid {
-    margin-left: 10%;
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 375px) {
+  #root {
+    min-width: 320px;
+  }
+  
+  .navbar-container {
+    padding: 1.5rem 1.8rem !important;
+  }
+
+  .aboutme-container img {
+    max-width: 57% !important;
+  }
+
+  .tech-grid-container {
+    width: 100% !important;
   }
 
 }
 
-@media (max-width: 375px) {
-    .navbar-container {
-  padding: 1.5rem 1.8rem !important;
+@media (min-width: 321px) and (max-width: 350px) {
+  .aboutme-container img {
+    max-width: 60% !important;
   }
-
-  .technologies-container h1 {
-    margin-left: -5px;
-  }
-
+  
   .tech-grid-container {
-    margin-left: -44%;
+    grid-template-columns: unset !important;
   }
 
   .portfolio-grid {
-    margin-left: 7.5%;
+    min-width: 321px;
   }
 }
 
 @media (max-width: 320px) {
   .navbar-container {
-  padding: 1.5rem 1.5rem !important;
+  padding: 1.5rem 1rem !important;
+  }
+
+  .aboutme-container img {
+    max-width: 65% !important;
+  }
+
+  .tech-grid-container {
+    grid-template-columns: unset !important;
+  }
+
+  .portfolio-grid {
+    min-width: 320px;
   }
 }
 
