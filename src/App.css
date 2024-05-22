@@ -402,6 +402,10 @@ html {
     max-width: 65% !important;
   }
 
+  /* .aboutme-container {
+    width: 100% !important
+  } */
+
   .tech-grid-container {
     grid-template-columns: unset !important;
   }
